@@ -15,7 +15,7 @@ set :haml, { :ugly => true, :format => :html5 }
 # Per-page layout changes:
 #
 # With no layout
-page "new.html", :layout => false
+page "new.html", :layout => :layout2
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
