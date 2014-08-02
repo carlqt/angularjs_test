@@ -1,8 +1,4 @@
 %ul
-	%li
-		%span Nexus S
-		%p Fast just got faster with Nexus S.
-	%li
-		%span Motorola XOOM with Wi-Fi
-		%p The Next, Next Generation tablet.
-
+	%li{ "ng-repeat" => "phone in phones" }
+		{{phone.name}}
+		%p {{phone.snippet}}
