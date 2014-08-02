@@ -53,6 +53,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+set :local_dir, 'data'
 
 # Build-specific configuration
 configure :build do
