@@ -9,7 +9,10 @@
         %option{ value: 'name' } Alphabetical
         %option{ value: 'age' } Newest
     .col-md-10
-      %ul
-        %li{"ng-repeat" => "phone in phones | filter:query | orderBy:orderProp"}
-          %span {{phone.name}}
+      %ul.phones
+        %li.thumbnail{"ng-repeat" => "phone in phones | filter:query | orderBy:orderProp"}
+          %a{ href: "#/phones/{{phone.id}}", class: "thumb" }
+            = image_tag nil, "ng-src" => "images/{{phone.imageUrl}}"
+          %a{ href: "#/phones/{{phone.id}}" }
+            {{phone.name}}  
           %p {{phone.snippet}}
