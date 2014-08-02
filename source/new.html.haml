@@ -1,4 +1,10 @@
-%ul
-	%li{ "ng-repeat" => "phone in phones" }
-		{{phone.name}}
-		%p {{phone.snippet}}
+.container-fluid
+  .row
+    .col-md-2
+      Search:
+      = input_tag "text", class: "demo", "ng-model" => "query"
+    .col-md-10
+      %ul
+        %li{"ng-repeat" => "phone in phones | filter:query"}
+          {{phone.name}}
+          %p {{phone.snippet}}
