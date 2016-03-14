@@ -16,6 +16,7 @@ set :haml, { :ugly => true, :format => :html5 }
 #
 # With no layout
 page "new.html", :layout => :layout2
+page "ng-book.html", :layout => "ng-book_layout"
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout

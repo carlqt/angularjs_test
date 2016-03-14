@@ -1,0 +1,14 @@
+my_controller = ($scope) ->
+  $scope.clock = now: new Date
+
+  updateClock = ->
+    $scope.clock.now = new Date
+    return
+
+  setInterval (->
+    $scope.$apply updateClock
+    return
+  ), 1000
+  updateClock()
+  return
+
