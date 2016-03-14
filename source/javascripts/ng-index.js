@@ -1,4 +1,5 @@
 var my_controller;
+debugger;
 
 my_controller = function($scope) {
   var updateClock;
